@@ -19,13 +19,14 @@ posts = {
     "https://pbs.twimg.com/media/FPvsO6xVkAEcrBm?format=jpg&name=900x900": "#Throwback to one of our favorite #MEETsummer events: #BowlingNight!",
     "https://pbs.twimg.com/media/FI_UkcnVIAAUvWN?format=jpg&name=medium": "2020 cohort in their Y1 summer!"}
 
+helloUser = "Layan Ghattas"
 
 #####
 
 
 @app.route('/')  # '/' for the default page
 def home():
-    return render_template('index.html')
+    return render_template('index.html', img = image_link, user_bio = user_bio, user = helloUser,posts = posts)
 
 
 @app.route('/about')  # '/' for the default page
