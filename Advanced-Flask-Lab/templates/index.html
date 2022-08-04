@@ -30,6 +30,13 @@
 						</ul>
 					</header>
 
+
+					{% for i in posts %}
+					
+					<img src="{{i}}" alt="" />
+					<h2>{{posts[i]}} </h2>
+
+					{% endfor %}
 				<!-- Main -->
 					<section id="main">
 
