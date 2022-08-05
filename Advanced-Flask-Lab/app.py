@@ -27,7 +27,7 @@ helloUser = "Layan Ghattas"
 @app.route('/')  # '/' for the default page
 def home():
     return render_template('index.html', img = image_link, user_bio = user_bio, user = helloUser,posts = posts)
-
+f
 
 @app.route('/about')  # '/' for the default page
 def about():
